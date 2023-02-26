@@ -22,6 +22,17 @@ Cú pháp: let, var, const
 
 Kiểu dữ liệu cơ bản: boolean, string, number, undefined, null, Object
 
+Toán tử:
+1. Toán tử số học: +, - , *, /, %
+2. Toán tử so sánh: >,<, <=, >=, !=,!==, ==, ===,
+3, Toán tử gán: =
+4. Toán tử logic: &&, ||, !
+- &&: Rà soát tất cả trường hợp => chỉ lấy trường hợp false (nếu tất cả true => true) => Tất cả đk đúng cùng lúc
+- || Rà soát tất cả trường hợp => chỉ lấy trường hợp true (nếu tất cả false => false) => lấy ít nhất 1 trường hợp đúng
+- Toán tử ngược: VD:  !(1>2) => true => Đảo ngược kết quả của điều kiện.
+5. Toán tử 3 ngôi:
+- (điều kiện)?"result1": "result2"
+
 
 Câu điều kiện: if, if else, if - else if - else
 
@@ -75,6 +86,20 @@ Object
 //   console.log(key);
 // }
 
+
+/// VD VỀ TOÁN TỬ LOGIC
+// console.log(
+//   true && true && false && true
+// ); // ? true/false
+
+// //  VD về toán tử 3 ngôi
+// console.log(
+//   1 < 2 ? "Đúng" : "Sai"
+// );
+
+
+
+// Spread Syntax
 
 
 
