@@ -153,12 +153,12 @@ console.log("obj3: ", obj3);
 
 
 ///// Copy đối tượng
-let Nguoi = {
-  name: "john",
-  age: 78
-}
+// let Nguoi = {
+//   name: "john",
+//   age: 78
+// }
 
-console.log("Nguoi: ", Nguoi);
+// console.log("Nguoi: ", Nguoi);
 // let copy_Nguoi = { ...Nguoi }
 // console.log("copy_Nguoi: ", copy_Nguoi);//? = Đúng côpy
 
@@ -166,3 +166,15 @@ console.log("Nguoi: ", Nguoi);
 // let copy_Nguoi = Nguoi;
 // copy_Nguoi.name = "Trump"
 // console.log("copy_Nguoi: ", copy_Nguoi);
+
+//// NỐI Array
+// let arr1 = ['abc', "gaming", "123"];
+// let arr2 = ["Snake", "Cat", "Dog"];
+
+/// C1:  => Nối 2 mảng này với nhau 
+// let arr3 = arr1.concat(arr2);
+// console.log("arr3: ", arr3); // => done
+
+/// C2:  => Nối 2 mảng này với nhau 
+// let arr3 = [...arr1, ...arr2]; // => done
+
