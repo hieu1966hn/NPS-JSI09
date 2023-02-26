@@ -193,3 +193,7 @@ console.log("arrNew: ", arrNew);
 //// In ra từng phần tử mảng là bình phương của chính nó?
 let arrBinhPhuong = arr.map(item => item * item);
 console.log("arrBinhPhuong: ", arrBinhPhuong);
+
+/*
+=> Mô tả: Map là 1 hàm dùng để thực hiện 1 hành động với từng phần tử mảng và kết quả trả về là 1 mảng mới với hành động hàm đó
+*/
