@@ -178,3 +178,18 @@ console.log("obj3: ", obj3);
 /// C2:  => Nối 2 mảng này với nhau 
 // let arr3 = [...arr1, ...arr2]; // => done
 
+////// Giới thiệu về Map
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/// Tăng từng phần tử mảng lên 1 đơn vị in ra mảng mới?
+
+// let arrNew = arr.map((item) => {
+//   return item + 1
+// })
+
+// Viết gọn
+let arrNew = arr.map(item => item + 1);
+console.log("arrNew: ", arrNew);
+
+//// In ra từng phần tử mảng là bình phương của chính nó?
+let arrBinhPhuong = arr.map(item => item * item);
+console.log("arrBinhPhuong: ", arrBinhPhuong);
