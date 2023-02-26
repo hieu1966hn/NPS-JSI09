@@ -62,6 +62,18 @@ Object
   "key": value;
 }
 
+
+Hàm là gì? Dùng để làm gì?
+- Hàm là 1 chương trình con được khai báo trong hệ thống hoặc bên ngoài
+- Dùng để xử lý 1 tác vụ hoặc 1 tính năng mà hàm được sinh ra để giải quyết 
+- Cú pháp khai báo:
++ function tenHam () {
+
+}
++ const tenHam = () => {
+
+}
+
  */
 // {
 //   {
@@ -100,6 +112,57 @@ Object
 
 
 // Spread Syntax
+let obj = {
+  "name": "john",
+  age: 24,
+  address: "22 Jump Street",
+  job: "Dev"
+
+}
+
+
+let obj2 = {
+  name: "Hiếu",
+  age: 25,
+  address: "Hà Nội",
+}
+
+
+////// Gộp đối tượng 1 và đối tượng 2 => Obj3
+let obj3 = Object.assign(obj, obj2);
+console.log("obj3: ", obj3);
+/// => Object mới sinh ra có tất cả các thuộc tính từ các đối tượng khác nhưng giá trị luôn là giá trị của object cuối cùng
+
+
+///// Spread syntax sử dụng với hàm (Nợ buổi 2 xử lý )
+
+// let sum = (x, y, z) => {
+//   return x + y + z
+// }
+
+// // console.log(
+// //   sum(1, 2, 3, 4)
+// // );//?  => 6 (không tính 4)
+
+
+// let num = [1, 2, 3, 4];
+// console.log(
+//   sum(...num)
+// );// ? => 
 
 
 
+///// Copy đối tượng
+let Nguoi = {
+  name: "john",
+  age: 78
+}
+
+console.log("Nguoi: ", Nguoi);
+// let copy_Nguoi = { ...Nguoi }
+// console.log("copy_Nguoi: ", copy_Nguoi);//? = Đúng côpy
+
+// Ví dụ cú pháp sai không bao giờ được dùng cái này?
+// let copy_Nguoi = Nguoi;
+// copy_Nguoi.name = "Trump"
+// console.log("copy_Nguoi: ", copy_Nguoi);
