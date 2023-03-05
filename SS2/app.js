@@ -28,9 +28,9 @@
 2. In ra 1 mảng mới: có thứ tự mảng sx tăng dần (không dùng sort())
 */
 
-let arr = [1, 4, 3, -2, 100, 0, 4, 6, 8, 3.5, 4];
-let xoaTrungLap = [...new Set(arr)]
-console.log("xoaTrungLap: ", xoaTrungLap);
+// let arr = [1, 4, 3, -2, 100, 0, 4, 6, 8, 3.5, 4];
+// let xoaTrungLap = [...new Set(arr)]
+// console.log("xoaTrungLap: ", xoaTrungLap);
 
 /////// Sx tăng dần
 // for (let i = 0; i < arr.length; i++) {
@@ -44,3 +44,33 @@ console.log("xoaTrungLap: ", xoaTrungLap);
 // }
 
 // console.log(arr);
+
+/////// includes:  Xác nhận phần tử có nằm bên trong mảng hay không
+// let arr = [1, 2, 3];
+// console.log(
+//   arr.includes(3)
+// );
+
+
+
+let users = [
+  { id: 11, name: "Adam", age: 23, group: 'editor' },
+  { id: 47, name: "John", age: 28, group: 'admin' },
+  { id: 85, name: "William", age: 34, group: 'editor' },
+  { id: 97, name: "Oliver", age: 28, group: 'admin' },
+]
+// let res = users.filter(it => it.name.includes("oli"));/// Lọc tên người dùng thỏa mãn: 
+// console.log("res: ", res);
+
+//// Sử dụng RegExp để lọc theo điều kiện 
+// let res = users.filter(it => new RegExp('joh', 'n').test(it.name));
+// console.log("res: ", res);
+
+
+/// in ra 2 đối tượng cùng group 
+console.log(
+  users.filter(item => item.group == "editor")
+);
+console.log(
+  users.filter(item => item.group == "admin")
+);

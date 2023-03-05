@@ -13,5 +13,6 @@ Buổi 2:
 * Filter: Sử dụng khi chúng ta muốn xóa các mục không thỏa mản điều kiện,...
 
 - Sắp xếp mảng: => tăng dần, giảm dần, ...
+- Nợ: RegExp, spread Syntax
 
 Buổi 3: mô hình web mvc (model view controller)
