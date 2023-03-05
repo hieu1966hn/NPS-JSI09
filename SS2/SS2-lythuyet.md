@@ -9,6 +9,9 @@ Buổi 1:
 Buổi 2:
 
 - Array: filter, find, indexOf
+
+* Filter: Sử dụng khi chúng ta muốn xóa các mục không thỏa mản điều kiện,...
+
 - Sắp xếp mảng: => tăng dần, giảm dần, ...
 
 Buổi 3: mô hình web mvc (model view controller)
