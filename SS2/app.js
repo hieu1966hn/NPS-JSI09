@@ -24,18 +24,23 @@
 
 /*
 Đề bài luyện tập buổi 2: 
-1. In ra 1 mảng mới: có thứ tự mảng sx tăng dần (không dùng sort())
+1. Xóa phần tử trùng lặp trong mảng
+2. In ra 1 mảng mới: có thứ tự mảng sx tăng dần (không dùng sort())
 */
 
-let arr = [1, 3, -2, 100, 0, 4, 6, 8, 3.5, 4];
-for (let i = 0; i < arr.length; i++) {
-  for (let j = i + 1; j < arr.length; j++) {
-    if (arr[i] > arr[j]) {
-      let temp = arr[i]; // 1
-      arr[i] = arr[j]; // -2 
-      arr[j] = temp; // 1
-    }
-  }
-}
+let arr = [1, 4, 3, -2, 100, 0, 4, 6, 8, 3.5, 4];
+let xoaTrungLap = [...new Set(arr)]
+console.log("xoaTrungLap: ", xoaTrungLap);
 
-console.log(arr);
+/////// Sx tăng dần
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] > arr[j]) {
+//       let temp = arr[i]; // 1
+//       arr[i] = arr[j]; // -2 
+//       arr[j] = temp; // 1
+//     }
+//   }
+// }
+
+// console.log(arr);
