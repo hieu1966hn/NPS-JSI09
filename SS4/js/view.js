@@ -4,6 +4,8 @@ const view = {} // Dùng để hiển thị lên màn hình giao diện cho ngư
 view.setActiveScreen = (screenName) => {
   switch (screenName) {
     case 'navbar':
+      document.getElementById("app").
+        innerHTML = components.navbar
 
       break;
     case "registerScreen":
