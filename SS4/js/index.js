@@ -1,0 +1,1 @@
+// Sử dụng để kết nối tới cơ sở dữ liệu bên ngoài

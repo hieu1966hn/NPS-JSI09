@@ -59,7 +59,7 @@ let users = [
   { id: 85, name: "William", age: 34, group: 'editor' },
   { id: 97, name: "Oliver", age: 28, group: 'admin' },
 ]
-// let res = users.filter(it => it.name.includes("oli"));/// Lọc tên người dùng thỏa mãn: 
+// let res = users.filter(it => it.name.includes("oli"));/// Lọc tên người dùng thỏa mãn:
 // console.log("res: ", res);
 
 //// Sử dụng RegExp để lọc theo điều kiện 
@@ -68,9 +68,61 @@ let users = [
 
 
 /// in ra 2 đối tượng cùng group 
-console.log(
-  users.filter(item => item.group == "editor")
-);
-console.log(
-  users.filter(item => item.group == "admin")
-);
+// console.log(
+//   users.filter(item => item.group == "editor")
+// );
+// console.log(
+//   users.filter(item => item.group == "admin")
+// );
+
+
+
+
+/*
+- OOP là gì? Công dụng của nó?
++ OOP: Lập trình hướng đối tượng  
+*/
+
+///// Cú pháp khai báo OOP trong JS
+//// Khai báo lớp Nguoi
+class Nguoi {
+  // Thuộc tính: name, age, address, job, id, ...
+
+  // Phương thức
+  breathe() {
+    alert("Đang hít thở")
+  }
+
+  look() {
+    alert("Nhìn")
+  }
+
+  speak() {
+    alert("Em là người");
+  }
+}
+
+let DucAnh = new Nguoi();
+DucAnh.breathe();
+DucAnh.look();
+
+
+///// Khai bao 1 kiểu dữ liệu dạng mảng: 
+// class Array1{
+//   map(){
+
+//   }
+
+//   filter(){
+
+//   }
+
+//   find(){
+
+//   }
+// }
+
+// let arr = new Array1();
+// arr.map();
+// arr.filter();
+// arr.find();
