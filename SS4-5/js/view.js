@@ -9,6 +9,8 @@ view.setActiveScreen = (screenName) => {
 
       break;
     case "registerScreen":
+      document.getElementById("app").
+        innerHTML = components.registerScreen
       break;
 
     case "loginScreen":

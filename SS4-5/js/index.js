@@ -2,7 +2,7 @@
 const init = () => {
   console.log("Windows Loaded");
 
-  view.setActiveScreen("navbar");
+  view.setActiveScreen("registerScreen");
 }
 
 
