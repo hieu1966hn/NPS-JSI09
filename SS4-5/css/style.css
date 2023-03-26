@@ -1,1 +1,19 @@
 /* Style cho toàn bộ các trang trong website */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.input-wrapper input {
+  border: 1px solid #dbdbdb;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
