@@ -22,3 +22,22 @@
   margin-top: 30px;
   font-weight: 200;
 }
+
+.input-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-name-wrapper .input-wrapper {
+  width: 48%;
+}
+
+#register-form {
+  padding: 20px;
+}
+
+.aside-right .form-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
