@@ -36,3 +36,9 @@ Tạo sao cần MVC:
 
 - Tách biệt các phần với nhau:
 - Tối ưu trên nhiều nền tảng ngôn ngữ khác nhau
+
+Buổi 5:
+
+1. Code giao diện trang đăng ký/đăng nhập
+2. Xây dựng thuật toán xử lý lỗi tại client ()
+3. Giới thiệu về nền tảng firebase và xây dựng tính năng xác thực người dùng
