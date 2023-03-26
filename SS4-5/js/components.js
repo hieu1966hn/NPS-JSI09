@@ -49,7 +49,7 @@ components.registerScreen = `
     </div>
   </div>
 `
-components.login = `
+components.loginScreen = `
 <div class="register-container">
     <div class="aside-right">
       <div class="header">
