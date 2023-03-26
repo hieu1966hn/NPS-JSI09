@@ -11,8 +11,34 @@
 </head>
 
 <body>
-  <!-- Register Screen -->
+  <!-- Login Screen -->
+  <div class="register-container">
+    <div class="aside-right">
+      <div class="header">
+        <h3>MindX Chat</h3>
+      </div>
 
+      <form id="register-form">
+
+
+        <div class="input-wrapper">
+          <input type="email" name="email" placeholder="Email">
+          <div class="error" id="email-error"></div>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="password" name="password" placeholder="Password">
+          <div class="error" id="password-error"></div>
+        </div>
+
+        <div class="form-action">
+          <span id="redirect-to-register">Don't have an account? Register</span>
+          <button class="btn" type="submit">Login</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
 
 
   <!-- Nhúng file js vào html -->
