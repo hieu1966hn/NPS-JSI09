@@ -39,4 +39,20 @@ controller.register = (data) => {
   else {
     document.getElementById("confirm-password-error").innerText = "";
   }
+
+  // check password with confirm password => toán tử 3 ngôi
+  data.password !== data.confirmPassword ?
+    document.getElementById("confirm-password-error").innerText = "Confirm Password is error" :
+    document.getElementById("confirm-password-error").innerText = "";
+
+
+  // Tạo user:
+  if (data.firstName !== "" && data.lastName !== "" &&
+    data.email !== "" &&
+    data.password !== "" &&
+    data.confirmPassword !== "") {
+
+    // gửi dữ liệu sạch tới model
+    model.register(data);
+  }
 }
