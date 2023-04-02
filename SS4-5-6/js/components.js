@@ -41,7 +41,7 @@ components.registerScreen = `
         </div>
 
         <div class="form-action">
-          <span id="redirect-to-login">Already have an account? Login</span>
+          <span class="cursor" id="redirect-to-login">Already have an account? Login</span>
           <button class="btn" type="submit">Register</button>
         </div>
 
