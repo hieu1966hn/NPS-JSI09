@@ -27,7 +27,9 @@ view.setActiveScreen = (screenName) => {
           password: registerForm.password.value,
           confirmPassword: registerForm.confirmPassword.value,
         }
-        console.log(data);// ?
+        console.log(data);//?
+
+        controller.register(data);
       })
 
       // Đây là đoạn code chuyển trang sang màn hình đăng nhập
