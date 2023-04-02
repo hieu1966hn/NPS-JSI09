@@ -12,12 +12,29 @@ view.setActiveScreen = (screenName) => {
       document.getElementById("app").
         innerHTML = components.registerScreen;
 
+      // Code lấy dữ liệu người dùng nhập vào
+      const registerForm = document.getElementById("register-form");
+      registerForm.addEventListener("submit", (event) => {
+        // Ngăn chặn trình duyệt tự reload khi submit form
+        event.preventDefault();
+
+
+        // collect dữ liệu đăng ký của người dùng như sau:
+        const data = {
+          firstName: registerForm.firstName.value,
+          lastName: registerForm.lastName.value,
+          email: registerForm.email.value,
+          password: registerForm.password.value,
+          confirmPassword: registerForm.confirmPassword.value,
+        }
+        console.log(data);// ?
+      })
 
       // Đây là đoạn code chuyển trang sang màn hình đăng nhập
       document.getElementById("redirect-to-login").
         addEventListener("click", () => {
           view.setActiveScreen("loginScreen");
-        })
+        });
       break;
 
     case "loginScreen":
