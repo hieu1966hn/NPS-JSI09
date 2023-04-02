@@ -40,5 +40,8 @@ Tạo sao cần MVC:
 Buổi 5:
 
 1. Code giao diện trang đăng ký/đăng nhập
-2. Xây dựng thuật toán xử lý lỗi tại client ()
-3. Giới thiệu về nền tảng firebase và xây dựng tính năng xác thực người dùng
+
+Buổi 6:
+
+1. Xây dựng thuật toán xử lý lỗi tại client ()
+2. Giới thiệu về nền tảng firebase và xây dựng tính năng xác thực người dùng

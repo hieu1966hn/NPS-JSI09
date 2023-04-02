@@ -10,12 +10,26 @@ view.setActiveScreen = (screenName) => {
       break;
     case "registerScreen":
       document.getElementById("app").
-        innerHTML = components.registerScreen
+        innerHTML = components.registerScreen;
+
+
+      // Đây là đoạn code chuyển trang sang màn hình đăng nhập
+      document.getElementById("redirect-to-login").
+        addEventListener("click", () => {
+          view.setActiveScreen("loginScreen");
+        })
       break;
 
     case "loginScreen":
       document.getElementById("app").
-        innerHTML = components.loginScreen
+        innerHTML = components.loginScreen;
+
+
+      // Đây là đoạn code chuyển trang sang màn hình đăng ký
+      document.getElementById("redirect-to-register").
+        addEventListener("click", () => {
+          view.setActiveScreen("registerScreen");
+        })
       break;
 
     case 'homeScreen':
