@@ -47,5 +47,20 @@ const toggleChecked = (id, newValue) => {
   });
 };
 
+document.querySelector("form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const inputValue = document.querySelector("input[type=text]").value = "";
+
+  if (inputValue.trim()) {
+    document.querySelector("input[type=text]").value = "";
+
+    await addDoc(collection(db, "todos"), {
+      content: inputValue,
+      checked: false,
+    })
+  }
+});
+
 
 
