@@ -50,3 +50,12 @@ Nhưng đôi khi không có ID có ý nghĩa cho tài liệu và sẽ thuận ti
 //   country: "Việt Nam"
 // });
 // console.log("Document written with ID: ", cityRef.id);
+
+
+// Xóa field air ở HCM
+// Remove the 'capital' field from the document
+await updateDoc(doc(db, "cities", "HCM"), {
+  air: deleteField(),
+});
+
+
