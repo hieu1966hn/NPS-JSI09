@@ -58,4 +58,6 @@ await updateDoc(doc(db, "cities", "HCM"), {
   air: deleteField(),
 });
 
+//// Xóa document mình muốn:
+await deleteDoc(doc(db, "cities", "HCM"));
 
