@@ -19,4 +19,4 @@ import {
 import { db } from "./firebase.js";
 
 const cityRef = doc(db, 'cities', 'HN');
-setDoc(cityRef, { capital: true }, { merge: true });
+setDoc(cityRef, { capital: true });
