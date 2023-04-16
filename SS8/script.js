@@ -19,4 +19,13 @@ import {
 import { db } from "./firebase.js";
 
 const cityRef = doc(db, 'cities', 'HN');
-setDoc(cityRef, { capital: true });
+await setDoc(cityRef, { capital: true });
+
+// UpdateDoc: Bổ sung thêm độ rộng thành phố HN
+await updateDoc(cityRef, {
+  range: "3360km2",
+  traffic: "traffic jam",
+  food: "Xiên Bẩn",
+  air: "Ô nhiễm",
+  drinks: ["beer", "mixue", "HighLands"]
+})
